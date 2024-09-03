@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(253,187,45);
+    background: radial-gradient(circle, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 88%);
+    text-align: center;  /*This line centers every elements of body */
+}
+main{
+    display: flex;
+    place-content: center;
+}
+.transparent{
+    background-color: #3891c2d1;
+    /* padding: 15px 30px; */
+    border-radius: 30px;
+    width: 508px;
+    height: 727px;
+    margin-top: 10px;
+    /* box-shadow:0 0 1rem rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 1px 1rem 1px rgba(0, 0, 0, 83.5);
+}
+h1{
+    font-size: 60px;
+    margin: 21px 0px 98px 0px;
+    /* color: rgb(11, 14, 161); */
+    color: rgb(0, 0, 0);
+}
+.container{
+    display: flex;
+    place-content: center;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px ;
+    width: 350px;
+    height: 350px;
+    
+}
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 65px;
+    background-color: bisque;
+    color: brown;
+    border-radius: 20px;
+    border: none;
+    /* box-shadow: inset 1px -3px 0.4rem 1px rgba(0, 0, 0, 83.5); */                /*3D looking like button shadow */
+    box-shadow: 2px -2px 0.4rem 0px rgba(0, 0, 0, 83.5);
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(255, 244, 41);
+}
+#reset-Btn{
+    margin-top: 70px;
+    width: 170px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(249, 2, 2);             
+    box-shadow: inset 1px -3px 0.4rem 1px rgba(0, 0, 0, 83.5);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+#reset-Btn:hover{
+    background-color: rgb(228, 28, 28);
+}
+#new-btn{
+    width: 170px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: blueviolet;
+    /* box-shadow:0 0 1rem rgba(0, 0, 0, 0.5); */
+    box-shadow: inset -4px -6px 0rem 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+#new-btn:hover{
+    background-color: rgb(147, 62, 227);
+}
+#rslt{
+    /* color: rgb(28, 117, 6); */
+    font-size: 55px;
+    margin: 70px;
+}
+.rslt-section{
+    margin: 225px 0px 500px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* used to hide the result section i.e. winner and New Game button  */
+.hide{
+    display: none;           
+}
+#watrMrk{
+    font-size: 10px;
+    margin-top: 12px;
+}
+
